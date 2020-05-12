@@ -17,6 +17,44 @@
     <title>Todos</title>
   </head>
   <body>
+    <div class="container">
+      <header class="text-center text-light my-4">
+        <h1 class="mb-4">Todo List</h1>
+        <form class="search">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search todos"
+            class="form-control m-auto"
+          />
+        </form>
+      </header>
+
+      <ul class="list-group todos mx-auto text-light">
+        <li
+          class="list-group-item d-flex justify-content-between align-itms-center"
+        >
+          <span>Do morning workouts</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-itms-center"
+        >
+          <span>Go and get groceries</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-itms-center"
+        >
+          <span>Study</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+      </ul>
+      <form class="add text-center my-4">
+        <label class="text-light">Add a new todo...</label>
+        <input type="text" name="add" class="form-control m-auto" />
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
